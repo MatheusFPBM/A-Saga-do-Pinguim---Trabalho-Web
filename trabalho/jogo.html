@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="jogo.css">
+  <title>Runner do Pinguim</title>
+</head>
+<body>
+
+  <div id="hud">
+    <p id="itens">Itens: 0</p>
+    <p id="tempo">Tempo: 60</p>
+    <p id="mensagem"></p>
+  </div>
+
+  <div id="jogo">
+    <img src="nuvens.png" id="nuvens">
+    <img src="nuvens.png" id="nuvens1">
+    <img src="montanha.png" id="montanha">
+    <img src="montanha.png" id="montanha1">
+    <img src="arvore.png" id="arvore">
+    <img src="arvore.png" id="arvore1">
+    <img src="chao1.png" id="chao">
+    <img src="picogrande.png" class="obstaculo">
+    <img src="picomedio.png" class="obstaculo">
+    <div id="telaInicial">
+      <h1>A saga do Pinguim</h1>
+      <button onclick="comecar()">Iniciar</button>
+    </div>  
+    <div id="telaGameOver">
+      <h2>Game Over!</h2>
+      <button onclick="reiniciar()">Jogar Novamente!</button>
+    </div>
+    <div>
+      <img src="pinguim7.png" id="pinguim">
+    </div>
+    <div>
+      <img src="peixe.png" id="peixe">
+    </div>
+    <div id="item"></div>
+  </div>
+
+  <div id="controles">
+    <button onclick="pular()">Pular</button>
+    <button onclick="reiniciar()">Reiniciar</button>
+  </div>
+
+  <script src="jogo.js"></script>
+</body>
+</html>
